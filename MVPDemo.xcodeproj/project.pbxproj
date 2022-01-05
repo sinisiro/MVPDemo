@@ -13,6 +13,10 @@
 		26528DA22785604E00F311E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26528DA02785604E00F311E9 /* Main.storyboard */; };
 		26528DA42785605200F311E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26528DA32785605200F311E9 /* Assets.xcassets */; };
 		26528DA72785605200F311E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26528DA52785605200F311E9 /* LaunchScreen.storyboard */; };
+		26528DB12785630100F311E9 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26528DB02785630100F311E9 /* Presenter.swift */; };
+		26528DB52785633200F311E9 /* ColorButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26528DB42785633200F311E9 /* ColorButtonView.swift */; };
+		26528DB82785635100F311E9 /* ColorButtonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26528DB72785635100F311E9 /* ColorButtonService.swift */; };
+		26528DBB2785636400F311E9 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26528DBA2785636400F311E9 /* ColorButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		26528DA32785605200F311E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26528DA62785605200F311E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26528DA82785605200F311E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26528DB02785630100F311E9 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		26528DB42785633200F311E9 /* ColorButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButtonView.swift; sourceTree = "<group>"; };
+		26528DB72785635100F311E9 /* ColorButtonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButtonService.swift; sourceTree = "<group>"; };
+		26528DBA2785636400F311E9 /* ColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		26528D992785604E00F311E9 /* MVPDemo */ = {
 			isa = PBXGroup;
 			children = (
+				26528DBA2785636400F311E9 /* ColorButton.swift */,
+				26528DB72785635100F311E9 /* ColorButtonService.swift */,
+				26528DB42785633200F311E9 /* ColorButtonView.swift */,
+				26528DB02785630100F311E9 /* Presenter.swift */,
+				26528D9E2785604E00F311E9 /* ViewController.swift */,
+				26528DC02785652800F311E9 /* Model */,
+				26528DBF2785651600F311E9 /* Presenter */,
+				26528DBE2785650F00F311E9 /* View */,
 				26528D9A2785604E00F311E9 /* AppDelegate.swift */,
 				26528D9C2785604E00F311E9 /* SceneDelegate.swift */,
-				26528D9E2785604E00F311E9 /* ViewController.swift */,
 				26528DA02785604E00F311E9 /* Main.storyboard */,
 				26528DA32785605200F311E9 /* Assets.xcassets */,
 				26528DA52785605200F311E9 /* LaunchScreen.storyboard */,
 				26528DA82785605200F311E9 /* Info.plist */,
 			);
 			path = MVPDemo;
+			sourceTree = "<group>";
+		};
+		26528DBE2785650F00F311E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		26528DBF2785651600F311E9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		26528DC02785652800F311E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26528DB12785630100F311E9 /* Presenter.swift in Sources */,
+				26528DB82785635100F311E9 /* ColorButtonService.swift in Sources */,
+				26528DB52785633200F311E9 /* ColorButtonView.swift in Sources */,
+				26528DBB2785636400F311E9 /* ColorButton.swift in Sources */,
 				26528D9F2785604E00F311E9 /* ViewController.swift in Sources */,
 				26528D9B2785604E00F311E9 /* AppDelegate.swift in Sources */,
 				26528D9D2785604E00F311E9 /* SceneDelegate.swift in Sources */,
@@ -287,6 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G957DG3WDN;
 				INFOPLIST_FILE = MVPDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G957DG3WDN;
 				INFOPLIST_FILE = MVPDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
